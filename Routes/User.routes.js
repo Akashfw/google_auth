@@ -25,7 +25,7 @@ userRouter.get(
              client.SET(`${token}`,token);
              client.EXPIRE(`${token}`, 86400);
       // token bhejna hai and then redirect karn hai
-      res.redirect(`http://127.0.0.1:5501/Frontend/Html/Landingpage.html?&email=${user.email}&id=${token}&first_name=${user.fname}&last_name=${user.lname}`);
+      res.redirect(`https://budgetbuddy-nu.vercel.app/Html/Landingpage.html?&email=${user.email}&id=${token}&first_name=${user.fname}&last_name=${user.lname}`);
       
     }
   );

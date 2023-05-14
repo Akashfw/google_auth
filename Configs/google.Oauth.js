@@ -30,7 +30,7 @@ passport.use(
           password: uuid(),
           avatar: profile.photos[0].value,
         });
-        await User.save();
+        await user.save();
         // console.log(profile)
         return cb(null, newuser);  
       }
